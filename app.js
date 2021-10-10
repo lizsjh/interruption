@@ -60,7 +60,7 @@ botui.message.add({
     });
 }).then(function(){
     return botui.message.add({
-        delay:900,
+        delay:1200,
         loading: true,
         content:'Which item(s) is missing?'
     });
@@ -128,7 +128,7 @@ botui.message.add({
     });
 }).then(function(){
     return botui.message.add({
-        delay:700,
+        delay:1200,
         loading: true,
         content:'I can create a new order that will be delivered within a day, or I can refund for the missing item. What would you prefer?'
     });
@@ -166,14 +166,14 @@ botui.message.add({
     });
 }).then(function(){
     return botui.message.add({
-        delay:1200,
+        delay:1800,
         loading: true,
         content:'I have processed your request. The issue is resolved'
     });
 }).then(function(){
     sendcomplete();
     return botui.message.add({
-        delay:700,
+        delay:900,
         loading: true,
         content:'Please contact us again if you need further assistance. Bye.'
     });
