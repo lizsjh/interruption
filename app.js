@@ -119,9 +119,15 @@ botui.message.add({
         content:'I will process your request. Please hold on for a moment.'
     });
 }).then(function(){
-    sendcomplete();
     return botui.message.add({
         delay:3000,
+        loading: true,
+        content:'I have processed your request. The issue is resolved.'
+    });
+}).then(function(){
+    sendcomplete();
+    return botui.message.add({
+        delay:2000,
         loading: true,
         content:'Please contact us again if you need further assistance. Bye.'
     });
